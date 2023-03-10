@@ -4,9 +4,6 @@ body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
-h1 {
- color: white;
-}
 
 nav {
     position: fixed;
@@ -193,7 +190,7 @@ nav h1 {
     margin: 1vw 1vw .4vw 1vw;
     width: 83.8%;
     text-align: left;
-    color: black;
+    color: #fff;
     }
     *,
 *:before,
@@ -208,5 +205,8 @@ h1 {
     margin: 1vw 1vw .4vw 1vw;
     width: 83.8%;
     text-align: left;
-    color: black;
+    color: #fff;
+}
+h2 {
+  color: black;
 }
