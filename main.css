@@ -190,7 +190,7 @@ nav h1 {
     margin: 1vw 1vw .4vw 1vw;
     width: 83.8%;
     text-align: left;
-    color: #fff;
+    color: black;
     }
     *,
 *:before,
@@ -205,5 +205,5 @@ h1 {
     margin: 1vw 1vw .4vw 1vw;
     width: 83.8%;
     text-align: left;
-    color: #fff;
+    color: black;
 }
