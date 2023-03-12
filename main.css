@@ -210,3 +210,43 @@ h1 {
 h2 {
   color: black;
 }
+#searchbar {
+  width: 25%;
+  text-align: center;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding: 7px;
+  border-radius: 17px;
+  border-color: #fff;
+  background-color: rgb(43, 142, 255);
+  opacity: 1;
+  outline: #fff;
+  transition: 0.4s;
+}
+#searchbar:hover {
+    background-color: #0364d5;
+    box-shadow: 0 0 13px 5px #fff;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input::placeholder {
+    color: #fff;
+    opacity: 50%;
+}
+
+.txt {
+    display: flex;
+}
+.mr {
+    margin-right: 1em;
+}
+a {
+    color: #fff;
+    transition: 0.4s;
+}
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
