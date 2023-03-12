@@ -6,3 +6,4 @@
 <p>https://nabilubg.github.io</p>
 <p>https://whizgames.github.io</p>
 <p>https://outred.github.io</p>
+<h1>https://discord.gg/5G9KMGmN</h1>
