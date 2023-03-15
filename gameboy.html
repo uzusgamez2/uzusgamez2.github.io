@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<head>
+  <title>gameboy</title>
+  <meta name="keywords" content="nabilafk, nabil's gameboy, games, nabil's games">
+  <meta name="theme-color" content="#36393F">
+  <meta property="og:image:url" content="https://github.com/science246/science246.github.io/blob/gh-pages/project-assets/img/nabillogo.png?raw=true">
+  <meta property="og:image:secure_url" content="https://github.com/science246/science246.github.io/blob/gh-pages/project-assets/img/nabillogo.png?raw=true">
+  <meta name="description" content="Play games online for free, no block!">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="shortcut-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/projects.css" />
+  <script src="/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/unknown (5)-modified.png">
+</head>
+<style>
+  body {
+    margin: 0%;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Chelsea Market', sans-serif;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  a {
+    font-family: 'Chelsea Market', sans-serif;
+    color: #6b4c8b;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  li a:hover {
+    background-color: #000000;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  h1 {
+    font-family: 'Chelsea Market', sans-serif;
+    color: #6B4C8B;
+  }
+
+  p {
+    font-family: 'Chelsea Market', sans-serif;
+    color: #FFF;
+  }
+
+  #gsearchbar {
+    outline: none;
+    width: 90.5%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    transition: 0.2ss ease;
+    cursor: text;
+    font-family: 'Chelsea Market', sans-serif;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 59, 59);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Chelsea Market', sans-serif;
+    display: grid;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Chelsea Market', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px;
+  }
+
+  body {
+    background: #2e2e2e;
+  }
+
+  h2 {
+    font-family: 'Chelsea Market', sans-serif;
+    text-align: center;
+    color: rgb(107, 76, 139);
+    background-color: transparent;
+    display: flex;
+    font-size: 100px;
+    margin-left: 83%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Chelsea Market', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px;
+  }
+
+  #cv {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body,
+  html {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #000000;
+  }
+
+  button {
+    width: 200px;
+    height: 48px;
+    color: rgb(107, 76, 139);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Chelsea Market', sans-serif;
+    display: grid;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Chelsea Market', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px;
+  }
+
+  h3 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Chelsea Market', sans-serif;
+    text-align: center;
+    color: rgb(107, 76, 139);
+  }
+
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#000000, #121212);
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: text;
+    max-width: 90%;
+    padding: 2em 3em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 2px #131415;
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  /*@media only screen and (max-width: 1915px) {
+	h2 {
+		margin-top: 15%;
+		margin-left: 72%;
+	}
+	.container {
+		right: 100%;
+	}
+}*/
+  .container {
+    padding: 20px;
+    font-family: 'Chelsea Market', sans-serif;
+    position: absolute;
+    left: 37%;
+  }
+
+  .box {
+    margin: auto;
+    background-color: black;
+    padding: 2px;
+    width: 400px;
+    border-radius: 11px;
+  }
+
+  #glist {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 400px;
+    height: 465px;
+    padding: 0;
+    text-align: center;
+    border-radius: 12px;
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  #glist::-webkit-scrollbar {
+    display: none;
+  }
+
+  #gsearchbar {
+    outline: none;
+    width: 90.5%;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    transition: 0.2s ease;
+    cursor: text;
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  #glist h2 {
+    display: block;
+    color: rgb(107, 76, 139);
+    font-size: 18px;
+    border: 1px solid rgb(56, 56, 56);
+    margin: -1px 0 0 0;
+    background-color: rgb(56, 56, 56);
+    padding: 12px;
+    font-weight: bold;
+    user-select: none;
+    border-radius: 12px;
+  }
+
+  #glist a {
+    display: block;
+    text-decoration: inherit;
+    color: #fff;
+    border: 1px solid rgb(56, 56, 56);
+    margin-top: -1px;
+    background-color: rgb(56, 56, 56);
+    padding: 12px;
+    transition: 0.2s ease;
+    font-family: 'Chelsea Market', sans-serif;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  #glist a:hover {
+    font-size: larger;
+  }
+
+  input {
+    font-family: 'Chelsea Market', sans-serif;
+    text-align: center;
+    color: rgb(107, 76, 139);
+    border: none;
+    border-radius: 12px;
+    padding: 6px;
+    width: 245px;
+    background-color: rgb(56, 56, 56);
+  }
+
+  ::placeholder {
+    color: rgb(107, 76, 139);
+    font-weight: lighter;
+  }
+
+  .header {
+    padding: 5px;
+    text-align: center;
+    background: #d1e8f1;
+    color: #6b4c8b;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 18%;
+    left: 39%;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(107, 76, 139);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Chelsea Market', sans-serif;
+    display: grid;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Chelsea Market', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px;
+    color: #6b4c8b;
+  }
+
+  body {
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #000000;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff3b3b;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0a0909;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #000000;
+  }
+
+  body {
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  #text {
+    position: absolute;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #000000;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff3b3b;
+    display: block;
+    transition: 0.3s;
+    font-size: 45px;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #474747;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  i {
+    font-size: 50px;
+    margin-right: 5px;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+  button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(107, 76, 139);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Chelsea Market', sans-serif;
+    display: grid;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Chelsea Market', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px;
+  }
+
+  body {
+    font-family: 'Chelsea Market', sans-serif;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #000000;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #6B4C8B;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0a0909;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #6B4C8B;
+    box-shadow: inset 0 0 0 0 #6B4C8B;
+    transition: ease-out 0.3s;
+    cursor: url("img/asterisk.png"), auto;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d3d3d3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #6B4C8B;
+    color: #fff;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+<body>
+<div class="navbar">
+  <a href="index.html">home</a>
+  <a href="developer.html">dev</a>
+  <a href="projects.html">games</a>
+  <a href="gba.html">gameboy</a>
+  <a href="trending.html">most popular</a>
+  <a href="extra.html" style="float:right;">bookmarklets</a>
+  <a href="tos.html" style="float:right;">terms & license</a>
+	<a href="feedback.html" style="float:right;">feedback</a>
+</div>
+<br>
+<div class="center-screen">
+  <div class="container">
+    <div class="box">
+      <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="search for games here.." />
+      <div id="glist">
+        <a href="./launcher.html#advancewars">Advance Wars</a>
+        <a href="./launcher.html#advancewars2">Advance Wars 2</a>
+        <a href="./launcher.html#aladdin">Aladdin</a>
+        <a href="./launcher.html#alienhominid">Alien Hominid</a>
+        <a href="./launcher.html#bomberman_max2blue">Bomberman Max 2 - Blue Advance</a>
+        <a href="./launcher.html#bomberman_tournament">Bomberman Tournament</a>
+        <a href="./launcher.html#bubblebobble">Bubble Bobble: Old and New</a>
+        <a href="./launcher.html#croket1">Croket! - Yume no Banker Survival!</a>
+        <a href="./launcher.html#croket2">Croket! 2 - Yami no Bank to Banqueen</a>
+        <a href="./launcher.html#croket3">Croket! 3 - Granu Oukoku no Nazo</a>
+        <a href="./launcher.html#croket4">Croket! 4 - Bank no Mori no Mamorigami</a>
+        <a href="./launcher.html#digimon_racing">Digimon Racing</a>
+        <a href="./launcher.html#dbz_supersonic">Dragon Ball Z - Supersonic Warriors</a>
+        <a href="./launcher.html#drilldozer">Drill Dozer</a>
+        <a href="./launcher.html#earthwormjim">Earthworm Jim</a>
+        <a href="./launcher.html#earthwormjim2">Earthworm Jim 2</a>
+        <a href="./launcher.html#ff1and2">Final Fantasy 1 &amp; 2 Advance</a>
+        <a href="./launcher.html#ff4S">Final Fantasy IV Advance (Sound Restoration Mod)</a>
+        <a href="./launcher.html#ff6">Final Fantasy VI Advance</a>
+        <a href="./launcher.html#final_fantasy_tactics">Final Fantasy Tactics Advance</a>
+        <a href="./launcher.html#fire_emblem">Fire Emblem</a>
+        <a href="./launcher.html#frogger1">Frogger Advance - The Great Quest</a>
+        <a href="./launcher.html#frogger2">Frogger's Adventures - Temple of the Frog</a>
+        <a href="./launcher.html#frogger3">Frogger's Adventures 2 - The Lost Wand</a>
+        <a href="./launcher.html#fzero_gp">F-Zero - GP Legend</a>
+        <a href="./launcher.html#fzero_max">F-Zero - Maximum Velocity</a>
+        <a href="./launcher.html#gamewatch4">Game &amp; Watch Gallery 4</a>
+        <a href="./launcher.html#goldensun">Golden Sun</a>
+        <a href="./launcher.html#gunstar_super_heroes">Gunstar Super Heroes</a>
+        <a href="./launcher.html#hamtaro_heartbreak">Hamtaro - Ham-Ham Heartbreak</a>
+        <a href="./launcher.html#kirbymirror">Kirby &amp; The Amazing Mirror</a>
+        <a href="./launcher.html#kirbynightmare">Kirby: Nightmare in Dreamland</a>
+        <a href="./launcher.html#superstar">Mario &amp; Luigi: Superstar Saga</a>
+        <a href="./launcher.html#mariokart">Mario Kart: Super Circuit</a>
+        <a href="./launcher.html#marioparty">Mario Party Advance</a>
+        <a href="./launcher.html#mariopinball">Mario Pinball Land</a>
+        <a href="./launcher.html#megamanbass">Megaman &amp; Bass</a>
+        <a href="./launcher.html#megaman_battle1">Megaman Battle Network 1</a>
+        <a href="./launcher.html#megaman_battle2">Megaman Battle Network 2</a>
+        <a href="./launcher.html#megaman_battle3_blue">Megaman Battle Network 3 Blue</a>
+        <a href="./launcher.html#megaman_battle4_blue">Megaman Battle Network 4 Blue Moon</a>
+        <a href="./launcher.html#megaman_battle4_red">Megaman Battle Network 4 Red Sun</a>
+        <a href="./launcher.html#megaman_battle5">Megaman Battle Network 5 Team Protoman</a>
+        <a href="./launcher.html#megaman_battle6">Megaman Battle Network 6 Cybeast Falzar</a>
+        <a href="./launcher.html#megaman_zero1">Megaman Zero</a>
+        <a href="./launcher.html#megaman_zero2">Megaman Zero 2</a>
+        <a href="./launcher.html#megaman_zero3">Megaman Zero 3</a>
+        <a href="./launcher.html#megaman_zero4">Megaman Zero 4</a>
+        <a href="./launcher.html#metalslug">Metal Slug Advance</a>
+        <a href="./launcher.html#metroid_fusion">Metriod Fusion</a>
+        <a href="./launcher.html#momotarou_dentetsu">Momotarou Dentetsu G Gold Deck wo Tsukure!</a>
+        <a href="./launcher.html#monopoly">Monopoly</a>
+        <a href="./launcher.html#monster_force">Monster Force</a>
+        <a href="./launcher.html#mortal_kombat">Mortal Kombat Advance</a>
+        <a href="./launcher.html#pacman_world">Pacman World</a>
+        <a href="./launcher.html#pacman_world2">Pacman World 2</a>
+        <a href="./launcher.html#pokemonemerald">Pokemon Emerald</a>
+        <a href="./launcher.html#pokemongreen">Pokemon Leaf Green</a>
+        <a href="./launcher.html#pokemonred">Pokemon Fire Red</a>
+        <a href="./launcher.html#pokemonruby">Pokemon Ruby</a>
+        <a href="./launcher.html#pokemonsapphire">Pokemon Sapphire</a>
+        <a href="./launcher.html#sonic_advance">Sonic Advance</a>
+        <a href="./launcher.html#sonic_advance2">Sonic Advance 2</a>
+        <a href="./launcher.html#sonic_advance3">Sonic Advance 3</a>
+        <a href="./launcher.html#sonicbattle">Sonic Battle</a>
+        <a href="./launcher.html#sonicpinball">Sonic Pinball</a>
+        <a href="./launcher.html#spyro_adventure">Spyro Adventure</a>
+        <a href="./launcher.html#spyro_ice">Spyro: Season of Ice</a>
+        <a href="./launcher.html#spyro_flame">Spyro 2: Season of Flame</a>
+        <a href="./launcher.html#supermarioadvance">Super Mario Advance</a>
+        <a href="./launcher.html#supermarioadvance2">Super Mario Advance 2</a>
+        <a href="./launcher.html#supermarioadvance3">Super Mario Advance 3</a>
+        <a href="./launcher.html#supermarioadvance4">Super Mario Advance 4</a>
+        <a href="./launcher.html#supermonkeyballjr">Super Monkey Ball Jr</a>
+        <a href="./launcher.html#super_street_fighter_2_turbo_revival">Super Street Fighter II: Turbo Revival</a>
+        <a href="./launcher.html#super_street_fighter_3_alpha">Super Street Fighter III: Alpha</a>
+        <a href="./launcher.html#tales_of_phantasia">Tales of Phantasia</a>
+        <a href="./launcher.html#tak2_staff_of_dreams">Tak 2: The Staff of Dreams</a>
+        <a href="./launcher.html#tmnt">Teenage Mutant Ninja Turtles</a>
+        <a href="./launcher.html#tetris_worlds">Tetris Worlds</a>
+        <a href="./launcher.html#sims_bustin_out">The Sims: Bustin &#39; Out</a>
+        <a href="./launcher.html#simpsons">The Simpsons: Road Rage</a>
+        <a href="./launcher.html#turok_evolution">Turok Evolution</a>
+        <a href="./launcher.html#warioland4">Wario Land 4</a>
+        <a href="./launcher.html#wario_ware">Wario Ware Inc</a>
+        <a href="./launcher.html#zelda_past">The Legend of Zelda: A Link to the Past</a>
+        <a href="./launcher.html#zelda_minish">The Legend of Zelda: The Minish Cap</a>
+      </div>
+    </div>
+  </div>
+</div>
+	        <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+      new Crate({
+          server: '1074859568334655488', // server
+          channel: '1081000069362360411' // channel
+      })
+	</body>
+</htm;>
