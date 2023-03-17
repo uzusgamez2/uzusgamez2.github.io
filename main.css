@@ -212,8 +212,54 @@ h2 {
 }
 
 
+.game {
+  height: 200px;
+  width: 200px;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
 .game:hover {
     -webkit-transform: scale(0.9);
 -ms-transform: scale(0.9);
 transform: scale(0.9);
 transition: 0.4s ease;}
+
+.game span {
+  top: 0;
+  left: -120%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.4s;
+  transform: skewX(10deg);
+}
+
+.game:hover span {
+  left: 120%;
+}
+
+.gameimage {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.gamename {
+  font-size: 0.1px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  order: 0;
+}
+
+.container {
+  padding: 9px;
+}
