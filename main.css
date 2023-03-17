@@ -212,3 +212,8 @@ h2 {
 }
 
 
+.game:hover {
+    -webkit-transform: scale(0.9);
+-ms-transform: scale(0.9);
+transform: scale(0.9);
+transition: 0.4s ease;}
