@@ -9,5 +9,8 @@ input.addEventListener('input', () => {
     } else {
       game.style.display = 'none';
     }
+    let btnBack = document.querySelector('button');
+btnBack.addEventListener('click', () => {
+    window.history.back();
   });
 });
