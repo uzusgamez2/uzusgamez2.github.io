@@ -247,3 +247,28 @@ h2 {
         color: #fff;
         opacity: 0.2;
     }
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-form button[type="submit"] {
+  height: 30px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
