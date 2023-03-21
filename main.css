@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
-
+@font-face {
+  font-family: 'comic';
+  src: url(fonts/comic.ttf);
+}
 body {
     background-color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comic', sans-serif;
 }
 
 nav {
@@ -36,6 +38,7 @@ nav h1 {
     font-size: 4vw;
     font-weight: 800;
     margin-right: 1%;
+    text-align: left;
 }
 
 .content {
@@ -202,13 +205,19 @@ nav h1 {
 h1 {
   font-size: 3.5vw;
     font-weight: 700;
-    margin: 1vw 1vw .4vw 1vw;
     width: 83.8%;
-    text-align: left;
+    margin: 1vw 1vw .4vw 1vw;
+    text-align: center;
     color: #fff;
 }
 h2 {
-  color: black;
+  color: white;
+  font-size: 3.5vw;
+    font-weight: 700;
+    width: 83.8%;
+    margin: 1vw 1vw .4vw 1vw;
+    text-align: center;
+    color: #fff;
 }
 
 #g4g_search {
@@ -271,4 +280,6 @@ h2 {
   padding: 5px 10px;
   cursor: pointer;
 }
-
+h3 {
+  width: 99.8%;
+}
