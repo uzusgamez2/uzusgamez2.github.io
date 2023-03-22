@@ -3,7 +3,7 @@
   src: url(fonts/comic.ttf);
 }
 body {
-    background-image: src"images/back.jpg";
+    background-color: black;
     font-family: 'Comic', sans-serif;
 }
 
