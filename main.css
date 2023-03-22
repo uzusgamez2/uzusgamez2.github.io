@@ -3,7 +3,7 @@
   src: url(fonts/comic.ttf);
 }
 body {
-    background-image: url("images/green6.jpg");
+    background-color: black;
     font-family: 'Comic', sans-serif;
 }
 
@@ -285,5 +285,5 @@ h3 {
 }
 
 href {
-  text-color: white;
+  background-color: white;
 }
