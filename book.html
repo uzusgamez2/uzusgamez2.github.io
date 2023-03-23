@@ -115,11 +115,9 @@
                               <pre class="prettyprint"><br>  javascript:var num=prompt('how many times do you want this page in your history?');done=false;x=window.location.href;for (var i=1; i<=num; i++){<br>  history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){<br>  alert('flood success! | nabilgames\n '+window.location.href+' \nis now in ur history '+num+(num==1?' time.':' times! '))}
                                 <br></pre>
                                 <a class="bttn" href="javascript:(function()%7B(%20function()%7Bwindow.location.replace(%22https%3A%2F%2Fclassroom.google.com%2Fh%22)%7D)()%7D)()">drag me<a>
-                              <h2>14.) Auto clicker <i>spams the current auto clicker</i></h2>
+                              <h2>15.) Auto clicker <i>spams the current auto clicker</i></h2>
                               <pre class="prettyprint"><br>  javascript:(function() { var clickerIsMouseDown = false; var clickerCurrentMouseTarget = document.body; document.body.addEventListener('mouseup', () => { clickerIsMouseDown = false; }); document.body.addEventListener('mousedown', () => { clickerIsMouseDown = true; }); document.body.addEventListener('mousemove', (e) => { clickerCurrentMouseTarget = e.target }); setInterval(() => { if (clickerIsMouseDown) clickerCurrentMouseTarget.click(); }, 0); })();
-                                <br></pre>
-                                <a class="bttn" href="javascript:(function() { var clickerIsMouseDown = false; var clickerCurrentMouseTarget = document.body; document.body.addEventListener('mouseup', () => { clickerIsMouseDown = false; }); document.body.addEventListener('mousedown', () => { clickerIsMouseDown = true; }); document.body.addEventListener('mousemove', (e) => { clickerCurrentMouseTarget = e.target }); setInterval(() => { if (clickerIsMouseDown) clickerCurrentMouseTarget.click(); }, 0); })();"
-                                    </div>
+                          
                                     
 </div>
       <script src="/js/tab.js"></script>
