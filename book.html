@@ -100,10 +100,6 @@
                 <a class="bttn" href="javascript:void(document.head.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/nabilubg/nabilubg.github.io@main/js/bookmarklets/virus.js')">drag me</a>
                 <h2>08.) invert media <i>inverts the color/shade of all media</i></h2>
                 <pre class="prettyprint"><br>  javascript:void(document.head.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/nabilubg/nabilubg.github.io@main/js/bookmarklets/invertmedia.js')
-                  <br></pre>
-                  <a class="bttn" href="javascript:void(document.head.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/nabilubg/nabilubg.github.io@main/js/bookmarklets/invertmedia.js')">drag me</a>
-                  <h2>09.) quizlet hacks <i>adds a hack menu to quizlet</i></h2>
-                  <pre class="prettyprint"><br>  javascript:void(document.head.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/nabilubg/nabilubg.github.io@main/js/bookmarklets/quizlet.js')
                     <br></pre>
                     <a class="bttn" href="javascript:void(document.head.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/nabilubg/nabilubg.github.io@main/js/bookmarklets/quizlet.js')">drag me</a>
                     <h2>10.) khan academy hacks <i>shows all answers for khan academy</i></h2>
@@ -123,8 +119,15 @@
                               <h2>14.) flood history <i>spams the current webpage url in your history</i></h2>
                               <pre class="prettyprint"><br>  javascript:var num=prompt('how many times do you want this page in your history?');done=false;x=window.location.href;for (var i=1; i<=num; i++){<br>  history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){<br>  alert('flood success! | nabilgames\n '+window.location.href+' \nis now in ur history '+num+(num==1?' time.':' times! '))}
                                 <br></pre>
+                                <a class="bttn" href="javascript:(function()%7B(%20function()%7Bwindow.location.replace(%22https%3A%2F%2Fclassroom.google.com%2Fh%22)%7D)()%7D)()">drag me<a>
+                              <h2>14.) Auto clicker <i>spams the current auto clicker</i></h2>
+                              <pre class="prettyprint"><br>  javascript:(function() { var clickerIsMouseDown = false; var clickerCurrentMouseTarget = document.body; document.body.addEventListener('mouseup', () => { clickerIsMouseDown = false; }); document.body.addEventListener('mousedown', () => { clickerIsMouseDown = true; }); document.body.addEventListener('mousemove', (e) => { clickerCurrentMouseTarget = e.target }); setInterval(() => { if (clickerIsMouseDown) clickerCurrentMouseTarget.click(); }, 0); })();
+                                <br></pre>
                                 <a class="bttn" href="javascript:(function()%7Bvar%20num%20%3D%20prompt('how%20many%20times%20do%20you%20want%20this%20page%20in%20your%20history%3F')%3Bdone%20%3D%20false%3Bx%20%3D%20window.location.href%3Bfor%20(var%20i%20%3D%201%3B%20i%20%3C%3D%20num%3B%20i%2B%2B)%20%7Bhistory.pushState(0%2C%200%2C%20i%20%3D%3D%20num%20%3F%20x%20%3A%20i.toString())%3Bif%20(i%20%3D%3D%20num)%20%7Bdone%20%3D%20true%7D%7Dif%20(done%20%3D%3D%3D%20true)%20%7Balert('flood%20success!%20%7C%20nabilgames%5Cn%20'%20%2B%20window.location.href%20%2B%20'%20%5Cnis%20now%20in%20ur%20history%20'%20%2B%20num%20%2B%20(num%20%3D%3D%201%20%3F%20'%20time.'%20%3A%20'%20times!%20'))%7D%7D)()">drag me<a>
                             </div>
+                                <a class="bttn" href="javascript:(function()%7Bvar%20num%20%3D%20prompt('how%20many%20times%20do%20you%20want%20this%20page%20in%20your%20history%3F')%3Bdone%20%3D%20false%3Bx%20%3D%20window.location.href%3Bfor%20(var%20i%20%3D%201%3B%20i%20%3C%3D%20num%3B%20i%2B%2B)%20%7Bhistory.pushState(0%2C%200%2C%20i%20%3D%3D%20num%20%3F%20x%20%3A%20i.toString())%3Bif%20(i%20%3D%3D%20num)%20%7Bdone%20%3D%20true%7D%7Dif%20(done%20%3D%3D%3D%20true)%20%7Balert('flood%20success!%20%7C%20nabilgames%5Cn%20'%20%2B%20window.location.href%20%2B%20'%20%5Cnis%20now%20in%20ur%20history%20'%20%2B%20num%20%2B%20(num%20%3D%3D%201%20%3F%20'%20time.'%20%3A%20'%20times!%20'))%7D%7D)()">drag me<a>
+                            </div>
+                                    
 </div>
       <script src="/js/tab.js"></script>
 </body>
